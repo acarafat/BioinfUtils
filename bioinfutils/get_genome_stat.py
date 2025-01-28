@@ -41,7 +41,7 @@ def genome_statistics(fasta_dir, fasta_suffix):
             f.write(f"{fasta_file},{stats['genome_size']},{stats['num_contigs']},{stats['n50']}\n")
 
 def main(args=None):
-    parser = argparse.ArgumentParser(description='Calculate genome statistics for FASTA files.')
+    parser = argparse.ArgumentParser(description='Calculate genome statistics from FASTA files in a directory.')
     parser.add_argument('--input', '-i', help='Input directory containing FASTA files.')
     parser.add_argument('--suffix', '-s', help='Suffix of the FASTA files (e.g., .fasta, .fas).')
     args = parser.parse_args(args)
