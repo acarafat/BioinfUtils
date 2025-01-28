@@ -17,7 +17,7 @@ def main(args=None):
     parser.add_argument('--input', '-i', help='Path to FASTA files')
     args = parser.parse_args(args)
 
-    genome_statistics(args.input)
+    fasta_statistics(args.input)
 
 if __name__ == "__main__":
     main()
